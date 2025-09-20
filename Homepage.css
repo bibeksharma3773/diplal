@@ -1,0 +1,348 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+header {
+  background-color: #0655a3;
+  color: white;
+  display: flex;
+  justify-content:left;
+  align-items: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+
+h1 {
+  font-size: 38px;
+  margin-top: 3%;
+  font-weight: bold;
+  position: relative;
+  align-items: center;
+  display: block;
+  margin-right: 18pc;
+}
+
+.logo {
+  height: 6%;
+  width: 6%;
+  margin-right: 20px;
+  position: relative;
+  object-fit: cover;
+  border-radius: 80%;
+  margin-left: 10%;
+}
+
+.flight-preview-sec {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+input{
+  font-size: 1rem;
+}
+
+.user-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: .25rem;
+  margin-top: 1rem;
+  margin: auto;
+  margin-left: 2pc;
+}
+
+.card{
+  background-color: rgba(206, 202, 206, 0.284);
+  margin-right: 2pc;
+  margin-bottom: 2pc;
+  height: 20pc;
+  border-radius: 9px;
+  box-shadow: 0 0 10px grey;
+  cursor: pointer;
+
+}
+
+.card:hover {
+  background-color: aquamarine; /* enlarge 5% on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* make shadow deeper */
+}
+
+
+.body,
+.part1,
+.part2 {
+  display: inline-block;
+  grid-template-columns: repeat(autofill, minmax(5px, 10px));
+}
+
+.card>.header {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card>.body,
+.part1,
+.part2 {
+  font-size: .7rem;
+  margin-right: 8px;
+  margin-bottom: 1px;
+
+}
+
+.hide {
+  display: none;
+}
+
+.flight {
+  width: 100%;
+  height: 60%;
+  margin-bottom: 1pc;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  background-color: rgb(43, 41, 41);
+  border-radius: 7px;
+}
+
+#airname {
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+#header {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.data {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+.details {
+  font-size: 15px;
+  margin-top: 7%;
+}
+
+.header-btns {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-left:25pc;
+}
+
+.header-btn {
+  background-color: white;
+  color: black;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  margin-left: 6px;
+  cursor: pointer;
+  border: none;
+}
+
+.profile-btn {
+  background-color: white;
+  color: black;
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
+  margin-left: 6px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 0;
+  font-weight: bold;
+  align-items: center;
+  display: block;
+  margin-top: 1px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 0;
+  font-weight: bold;
+  margin-left: 0px;
+}
+
+main {
+  padding: 20px;
+}
+
+.search,
+.flight-preview-sec,
+.seat-preview {
+  background: white;
+  padding: 30px;
+  margin: 20px auto;
+  width: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+}
+
+.seat-preview {
+  margin-left: 1pc;
+  width: 18pc;
+  display: inline-block;
+  padding-left: 1pc;
+}
+
+.flight-preview-div {
+  background: white;
+  margin: 20px auto;
+  width: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  height: 9pc;
+  padding-left: 2px;
+  padding-top: 1pc;
+}
+
+#dep-time,
+#arr-time,
+#jor-time,
+#duration,
+#price,
+#book {
+  margin-left: 15px;
+  margin-right: 50px;
+  display: inline-block;
+}
+
+.show {
+  background-color: rgb(247, 236, 236);
+  color: black;
+  height: 30px;
+  width: 110px;
+  border-radius: 100px;
+  border-color: black;
+  border-width: 2px;
+  display: inline-block;
+  margin-left: 0px;
+  margin-right: 1pc;
+}
+
+#flight-name {
+  display: inline-block;
+  margin-top: 0px;
+  margin-left: 1.3pc;
+  text-align: left;
+  margin-right: 23pc;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+#book,
+#search-btn {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#book,
+#search-btn {
+  background-color: #0073e6;
+  color: white;
+  cursor: pointer;
+}
+
+#book,
+#search-btn:hover {
+  background-color: #005bb5;
+}
+
+#s1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  margin-left: 2px;
+  margin-bottom: 6px;
+  font-size: 24px;
+  transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out;
+}
+
+#s1:hover {
+  background-color: rgb(23, 138, 23);
+  color: white;
+  opacity: 2;
+  cursor: pointer;
+  border-color: white;
+  transform: scale(1.1);
+}
+
+#side {
+  margin-bottom: 15px;
+
+}
+
+.std {
+  border-color: white;
+  background-color: white;
+  height: 3pc;
+  width: 10pc;
+  padding-bottom: 2px;
+}
+
+.footer {
+  color: white;
+  height: 16pc;
+  width: 100%;
+  background-color: rgb(55, 112, 216);
+  text-align: center;
+  padding-top:1px;
+  padding-bottom:1px;
+}
+
+#clg {
+  align-items: center;
+  margin-left: 18pc;
+}
+
+#open-form {
+  margin-left: 35pc;
+  background-color: rgb(33, 33, 152);
+  color: white;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border: none;
+
+}
+
+hr {
+  background-color: black;
+}

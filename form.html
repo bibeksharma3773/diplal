@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Ticket Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+  <form action="AVISEAT_PHP/insertdata/inticket.php" method="post" class="ticket-form">
+    <div class="form-header">
+      <img id="logo" src="logo.png.png" alt="AVISEAT Logo">
+      <h2>Flight Ticketing Form</h2>
+    </div>
+    <h4>Your safe journey is our priority. Please bring this ticket on the day of flight.</h4>
+    <div>---------------------------------------------------------------------------------------------</div>
+    <div class="form-body">
+
+      <div class="input-group">
+        <label for="name">Passenger Name:</label>
+        <input type="text" id="PassengerName" name="PassengerName" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="input-group">
+        <label for="Age">Age:</label>
+        <input type="number" id="Age" name="Age" min="1" placeholder="Enter your age" required>
+      </div>
+
+      <div class="input-group">
+        <label for="citizen">Citizenship:</label>
+        <select name="citizen" id="citizen" required>
+          <option value="" disabled selected>-- Select --</option>
+          <option value="Nepali">Nepali</option>
+          <option value="Indian">Indian</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="Email">Email:</label>
+        <input type="Email" id="Email" name="Email" placeholder="example@email.com" required>
+      </div>
+
+      <div class="input-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+977-98XXXXXXXX" pattern="[0-9+ -]{7,15}" required>
+      </div>
+
+      <div class="journey">
+        <div class="input-group">
+          <label for="departure">Departure:</label>
+          <select name="departure" id="departure" required>
+            <option value="" disabled selected>-- Select --</option>
+            <option value="Janakpur">Janakpur</option>
+            <option value="Kathmandu">Kathmandu</option>
+            <option value="Biratnagar">Biratnagar</option>
+            <option value="Pokhara">Pokhara</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="arrival">Arrival:</label>
+          <select name="arrival" id="arrival" required>
+            <option value="" disabled selected>-- Select --</option>
+            <option value="Janakpur">Janakpur</option>
+            <option value="Kathmandu">Kathmandu</option>
+            <option value="Biratnagar">Biratnagar</option>
+            <option value="Pokhara">Pokhara</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="seats">Number of Seats:</label>
+        <input type="number" id="seats" name="seats" min="1" placeholder="Enter number of seats" required>
+      </div>
+
+      <div class="input-group">
+        <label for="class">Travel Class:</label>
+        <select name="class" id="class" required>
+          <option value="" disabled selected>-- Select Class --</option>
+          <option value="Economy">Economy</option>
+          <option value="Business">Business</option>
+          <option value="First Class">First Class</option>
+        </select>
+      </div>
+
+      <div class="input-group payment">
+        <label>Payment Method:</label>
+        <div class="payment-method">
+           <label><input type="radio" name="payment" value="Credit/Debit Card" required> Credit/Debit Card</label>
+<label><input type="radio" name="payment" value="Cash" required> Cash</label>
+
+        </div>
+        
+      </div>
+
+      <div class="form-buttons">
+        <button type="submit" class="btn submit">Submit</button>
+        <button type="button" class="btn secondary" onclick="location.href='paymentform.html'">Add Card Details</button>
+      </div>
+
+    </div>
+  </form>
+</body>
+
+</html>

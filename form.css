@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 5pc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.ticket-form {
+  background:white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-header {
+  display:flex;
+  text-align: center;
+  align-items:center;
+  
+}
+.form-header{
+  height:8pc;
+}
+.form-header img {
+  height: 10pc;
+}
+
+.form-header h2 {
+  color: #0072ff;
+  margin: 0;
+}
+
+.form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-group input,
+.input-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #0072ff;
+  box-shadow: 0 0 5px rgba(0, 114, 255, 0.3);
+  outline: none;
+}
+
+.journey {
+  display: flex;
+  gap: 15px;
+}
+
+.payment label {
+  font-weight: normal;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn.submit {
+  background: #0072ff;
+  color: white;
+}
+
+.btn.submit:hover {
+  background: #0056cc;
+}
+
+.btn.secondary {
+  background: #f1f1f1;
+  color: #333;
+}
+
+.btn.secondary:hover {
+  background: #ddd;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .journey {
+    flex-direction: column;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.payment-method{
+  display:flex;
+  gap:25px;
+}
